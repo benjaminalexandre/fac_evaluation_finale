@@ -1,0 +1,28 @@
+.footer{
+  background-color: $grey;
+  text-align: center;
+  color: white;
+}
+
+.partenaires-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 5px 0 5px;
+
+}
+.partenaires-img{
+  width: 70px;
+}
+
+@media all and (min-width: 1024px) {
+  .footer {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  .contact{
+    display: flex;
+    justify-content: space-around;
+  }
+}

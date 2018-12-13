@@ -1,0 +1,346 @@
+@font-face {
+  font-family: Anton;
+  src: url("./font/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: LatoBlack;
+  src: url("./font/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: LatoRegular;
+  src: url("./font/Lato-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  font-family: Anton;
+}
+
+button {
+  border: none;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  text-align: center;
+  padding: 0;
+}
+
+ul li {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #b3d143;
+  width: 35px;
+  height: 100%;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 4px;
+  margin: 4px 5px;
+  transition: 0.4s;
+  background-color: white;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+.navbar {
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #b3d143;
+  width: 100%;
+  left: 0;
+}
+
+.logo-site {
+  width: 40%;
+  margin-left: 5px;
+}
+
+.slide {
+  width: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}
+
+li button {
+  background-color: #fcb731;
+  color: black;
+}
+
+li button:hover {
+  background-color: #f6a404;
+}
+
+li :hover {
+  background-color: #758c22;
+}
+
+@media all and (min-width: 1024px) {
+  .container {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar ul li a {
+    font-size: 25px;
+    border: none;
+  }
+  .navbar ul li button {
+    font-size: 20px;
+  }
+}
+
+@font-face {
+  font-family: Anton;
+  src: url("./font/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: LatoBlack;
+  src: url("./font/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: LatoRegular;
+  src: url("./font/Lato-Regular.ttf");
+}
+
+.content {
+  text-align: center;
+}
+
+.content .logo {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.titreTxt > * {
+  color: #fcb731;
+  font-family: Anton;
+}
+
+.logo-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-content div {
+  width: 40%;
+}
+
+.logo-content div .logo-content-img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.btn-plus > button {
+  background-color: #6d6f71;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+}
+
+.btn-plus > button:hover {
+  background-color: #545657;
+}
+
+.btn-souscrire > button {
+  color: black;
+  background-color: #fcb731;
+  font-size: 20px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-souscrire > button img {
+  width: 50px;
+}
+
+.btn-souscrire > button:hover {
+  background-color: #f6a404;
+}
+
+.coop {
+  color: #c3a575;
+}
+
+.photovoltaique {
+  color: #b3d143;
+}
+
+.energie {
+  color: #fcb731;
+}
+
+.capital {
+  color: #00afec;
+}
+
+.paragraphe {
+  background-image: url("../svg/points.svg");
+  margin: 20px 0;
+}
+
+.paragraphe span {
+  font-size: 20px;
+}
+
+.actu {
+  background-color: #fcb731;
+  color: white;
+}
+
+.demarche {
+  background-color: #b3d143;
+  color: #6d6f71;
+}
+
+.installation {
+  background-image: url("../svg/points.svg");
+  color: #6d6f71;
+}
+
+.installation .btn button {
+  background-color: #6d6f71;
+  color: white;
+  width: 100%;
+}
+
+.installation .btn button:hover {
+  background-color: #545657;
+}
+
+.temoignages {
+  background-color: #e8ddca;
+  color: #6d6f71;
+}
+
+.box {
+  padding: 5px 5px;
+}
+
+.head-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-box .fleche-box {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+}
+
+.head-box .box-text {
+  text-align: justify;
+}
+
+.fleche {
+  height: 20px;
+}
+
+@media all and (min-width: 1024px) {
+  .content {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  .content .logo {
+    width: 300px;
+  }
+  .logo-content div {
+    width: 20%;
+  }
+  .box .img-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box .img-box img {
+    width: 40%;
+    height: 40%;
+  }
+  .box .img-box .box-text {
+    text-align: justify;
+    padding: 0 20px;
+  }
+}
+
+.footer {
+  background-color: #6d6f71;
+  text-align: center;
+  color: white;
+}
+
+.partenaires-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 5px 0 5px;
+}
+
+.partenaires-img {
+  width: 70px;
+}
+
+@media all and (min-width: 1024px) {
+  .footer {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  .contact {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/*# sourceMappingURL=general.css.map */

@@ -1,0 +1,145 @@
+$brown: rgb(195,165,117);
+$lightbrown: rgb(232,221,202);
+$orange: rgb(252,183,49);
+$blue: rgb(0,175,236);
+$green: rgb(179,209,67);
+$darkgreeen: rgb(100,123,34);
+$grey: rgb(109,111,113);
+
+@font-face {
+  font-family: Anton;
+  src: url("./font/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: LatoBlack;
+  src: url("./font/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: LatoRegular;
+  src: url("./font/Lato-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  font-family: Anton;
+}
+
+button{
+  border: none;
+  height: 100%;
+}
+
+img{
+  width: 100%;
+}
+
+ul{
+  text-align:center;
+  padding: 0;
+}
+
+ul li {
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  background-color: $green;
+  width: 35px;
+  height: 100%;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 4px;
+  margin: 4px 5px;
+  transition: 0.4s;
+  background-color: white;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+.navbar {
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: $green;
+  width: 100%;
+  left: 0;
+}
+
+.logo-site {
+  width: 40%;
+  margin-left: 5px;
+}
+
+.slide {
+  width: 100%;
+}
+
+li{
+  display: flex;
+  justify-content: center;
+  button {
+    background-color: $orange;
+    color: black;
+  }
+  button:hover{
+    background-color: darken($orange,10%);
+  }
+  :hover{
+    background-color: darken($green,20%);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .container{
+    display: none;
+  }
+  .navbar {
+    display: block;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        a {
+          font-size: 25px;
+          border: none;
+        }
+        button{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+

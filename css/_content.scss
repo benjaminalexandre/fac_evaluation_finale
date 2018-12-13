@@ -1,0 +1,174 @@
+@font-face {
+  font-family: Anton;
+  src: url("./font/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: LatoBlack;
+  src: url("./font/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: LatoRegular;
+  src: url("./font/Lato-Regular.ttf");
+}
+
+.content {
+  text-align: center;
+  .logo {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+
+.titreTxt > *{
+  color: $orange;
+  font-family: Anton;
+}
+
+.logo-content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  div {
+    width: 40%;
+    .logo-content-img{
+      width: 100px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.btn-plus > button {
+  background-color: $grey;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+}
+.btn-plus > button:hover{
+  background-color: darken($grey, 10%);
+}
+
+.btn-souscrire>button{
+  color: black;
+  background-color: $orange;
+  font-size: 20px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 50px;
+  }
+}
+
+.btn-souscrire > button:hover{
+  background-color: darken($orange, 10%);
+}
+
+.coop{
+  color: $brown;
+}
+
+.photovoltaique{
+  color: $green;
+}
+
+.energie{
+  color: $orange;
+}
+
+.capital{
+  color: $blue;
+}
+
+.paragraphe{
+  background-image: url("../svg/points.svg");
+  margin: 20px 0;
+  span {
+    font-size: 20px;
+  }
+}
+
+.actu{
+  background-color: $orange;
+  color: white;
+}
+
+.demarche{
+  background-color: $green;
+  color: $grey;
+}
+
+.installation{
+  background-image: url("../svg/points.svg");
+  color: $grey;
+  .btn{
+    button{
+      background-color: $grey;
+      color: white;
+      width: 100%;
+    }
+    button:hover{
+      background-color: darken($grey, 10%);
+    }
+  }
+}
+
+.temoignages{
+  background-color: $lightbrown;
+  color:$grey;
+}
+
+.box{
+  padding: 5px 5px;
+}
+
+.head-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .fleche-box{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+  }
+  .box-text{
+    text-align: justify;
+  }
+}
+
+.fleche{
+  height: 20px;
+}
+
+@media all and (min-width: 1024px) {
+  .content{
+    width: 1024px;
+    margin: 0 auto;
+    .logo {
+      width: 300px;
+    }
+  }
+
+  .logo-content div {
+    width: 20%;
+  }
+
+  .box{
+    .img-box{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img{
+        width: 40%;
+        height: 40%;
+      }
+      .box-text{
+        text-align: justify;
+        padding: 0 20px;
+      }
+    }
+  }
+
+}
