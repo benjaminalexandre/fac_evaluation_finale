@@ -1,4 +1,4 @@
 # fac_evaluation_finale
 
-url pour récupérer l'évaluation : 
-http://fac.gamuza.fr/
+Tp noté Cours HTML/CSS
+Utilisation de scss
