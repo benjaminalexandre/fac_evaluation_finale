@@ -199,17 +199,17 @@ a {
   color: #fcb731;
 }
 
-.content .logo-content {
+.logo-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.content .logo-content div {
+.logo-content div {
   width: 40%;
 }
 
-.content .logo-content div .logo-content-img {
+.logo-content div .logo-content-img {
   width: 100px;
   margin: 0 auto;
 }
@@ -386,6 +386,9 @@ a {
   }
   .content .logo {
     width: 300px;
+  }
+  .logo-content {
+    flex-wrap: nowrap;
   }
   .paragraphe {
     width: 1024px;

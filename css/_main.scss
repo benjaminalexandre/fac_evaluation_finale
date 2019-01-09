@@ -8,17 +8,18 @@
   .titreTxt > *{
      color: $orange;
   }
-  .logo-content{
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     div {
-       width: 40%;
-       .logo-content-img{
-         width: 100px;
-         margin: 0 auto;
-       }
-     }
+}
+
+.logo-content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  div {
+    width: 40%;
+    .logo-content-img{
+      width: 100px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -190,6 +191,10 @@
     .logo {
       width: 300px;
     }
+  }
+
+  .logo-content{
+    flex-wrap: nowrap;
   }
 
   .paragraphe{
