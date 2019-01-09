@@ -1,7 +1,14 @@
-.footer{
+.bg-footer{
   background-color: $grey;
+}
+
+.footer{
   text-align: center;
   color: white;
+}
+
+.contact{
+  padding: 20px 0;
 }
 
 .partenaires-box{
@@ -10,10 +17,26 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 20px 5px 0 5px;
+  span {
+    font-family: Calibri;
+  }
+}
+
+.network{
+  fill: white;
+  width: 1em;
+  height: 1em;
 
 }
 .partenaires-img{
   width: 70px;
+  img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+  }
 }
 
 @media all and (min-width: 1024px) {

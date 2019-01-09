@@ -1,6 +1,10 @@
-@font-face {
+* {
+  margin: 0;
   font-family: Anton;
-  src: url("./font/Anton-Regular.ttf");
+}
+
+img {
+  width: 100%;
 }
 
 @font-face {
@@ -9,13 +13,13 @@
 }
 
 @font-face {
-  font-family: LatoRegular;
-  src: url("./font/Lato-Regular.ttf");
+  font-family: Anton;
+  src: url("./font/Anton-Regular.ttf");
 }
 
-* {
-  margin: 0;
-  font-family: Anton;
+@font-face {
+  font-family: LatoRegular;
+  src: url("./font/Lato-Regular.ttf");
 }
 
 button {
@@ -23,13 +27,11 @@ button {
   height: 100%;
 }
 
-img {
-  width: 100%;
-}
-
 ul {
   text-align: center;
   padding: 0;
+  width: 60%;
+  margin: 0 auto;
 }
 
 ul li {
@@ -40,7 +42,25 @@ a {
   text-decoration: none;
   font-size: 12px;
   color: white;
-  border-bottom: 1px solid white;
+}
+
+.slide {
+  background: url("../Photos/20161202_101925.jpg") no-repeat center;
+  background-size: cover;
+  height: 200px;
+}
+
+.menu {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.logo-site {
+  width: 40%;
+  margin-left: 5px;
 }
 
 .container {
@@ -60,8 +80,8 @@ a {
 }
 
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .change .bar2 {
@@ -69,15 +89,8 @@ a {
 }
 
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5px;
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
 }
 
 .navbar {
@@ -85,74 +98,96 @@ a {
   display: none;
   position: absolute;
   background-color: #b3d143;
-  width: 100%;
-  left: 0;
+  width: 50%;
+  left: 50%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.logo-site {
-  width: 40%;
-  margin-left: 5px;
-}
-
-.slide {
-  width: 100%;
-}
-
-li {
+.link {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid white;
+  margin: 5px 0;
 }
 
-li button {
-  background-color: #fcb731;
-  color: black;
-}
-
-li button:hover {
-  background-color: #f6a404;
-}
-
-li :hover {
+.link :hover {
   background-color: #758c22;
 }
 
+.fleche-droite-menu {
+  fill: white;
+  width: 0.6em;
+  height: 0.6em;
+  position: absolute;
+  right: 25%;
+}
+
+.button > button {
+  background-color: #fcb731;
+  margin: 5px 0;
+  color: black;
+}
+
+.button > button :hover {
+  background-color: #f6a404;
+}
+
+@media all and (min-width: 768px) {
+  .slide {
+    height: 480px;
+  }
+}
+
 @media all and (min-width: 1024px) {
+  .menu {
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 4px;
+  }
+  .menu .logo-site {
+    width: 100%;
+    content: url("../logos/EnergiesCollectivesLogo_ajuste.svg");
+  }
   .container {
     display: none;
   }
   .navbar {
     display: block;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 768px;
+    position: relative;
+    top: 50px;
+    left: 0;
+    margin: 0 auto;
   }
   .navbar ul {
     display: flex;
     justify-content: space-around;
+    width: 100%;
   }
-  .navbar ul li a {
-    font-size: 25px;
+  .navbar ul .link {
     border: none;
   }
-  .navbar ul li button {
+  .navbar ul .link a {
+    font-size: 20px;
+    color: black;
+  }
+  .navbar ul .link .fleche-droite-menu {
+    display: none;
+  }
+  .navbar ul .button > button {
+    margin: 0;
     font-size: 20px;
   }
 }
 
-@font-face {
-  font-family: Anton;
-  src: url("./font/Anton-Regular.ttf");
-}
-
-@font-face {
-  font-family: LatoBlack;
-  src: url("./font/Lato-Black.ttf");
-}
-
-@font-face {
-  font-family: LatoRegular;
-  src: url("./font/Lato-Regular.ttf");
-}
-
 .content {
   text-align: center;
+  margin: 50px auto;
 }
 
 .content .logo {
@@ -160,53 +195,27 @@ li :hover {
   margin: 0 auto;
 }
 
-.titreTxt > * {
+.content .titreTxt > * {
   color: #fcb731;
-  font-family: Anton;
 }
 
-.logo-content {
+.content .logo-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.logo-content div {
+.content .logo-content div {
   width: 40%;
 }
 
-.logo-content div .logo-content-img {
+.content .logo-content div .logo-content-img {
   width: 100px;
   margin: 0 auto;
 }
 
-.btn-plus > button {
-  background-color: #6d6f71;
-  width: 100%;
-  font-size: 20px;
-  color: white;
-}
-
-.btn-plus > button:hover {
-  background-color: #545657;
-}
-
-.btn-souscrire > button {
-  color: black;
-  background-color: #fcb731;
-  font-size: 20px;
-  width: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.btn-souscrire > button img {
-  width: 50px;
-}
-
-.btn-souscrire > button:hover {
-  background-color: #f6a404;
+.picto-logo {
+  width: 100px;
 }
 
 .coop {
@@ -225,13 +234,85 @@ li :hover {
   color: #00afec;
 }
 
-.paragraphe {
+.bg-point {
   background-image: url("../svg/points.svg");
-  margin: 20px 0;
 }
 
-.paragraphe span {
+.paragraphe {
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraphe .title {
+  font-size: 25px;
+  color: #6d6f71;
+}
+
+.paragraphe .text {
+  font-family: Calibri;
+  color: #6d6f71;
+}
+
+.btn-plus {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.btn-plus > button {
+  background-color: #6d6f71;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
   font-size: 20px;
+  color: white;
+}
+
+.btn-plus > button:hover {
+  background-color: #545657;
+}
+
+.plus-logo {
+  fill: white;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.5em;
+}
+
+.btn-souscrire {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.btn-souscrire > button {
+  background-color: #fcb731;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  font-size: 20px;
+  color: black;
+}
+
+.btn-souscrire > button:hover {
+  background-color: #f6a404;
+}
+
+.box {
+  padding: 5px 0;
+  margin: 10px auto;
+}
+
+.fleche-droite-actu {
+  fill: white;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.fleche-droite-temoignages {
+  fill: #6d6f71;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .actu {
@@ -249,10 +330,18 @@ li :hover {
   color: #6d6f71;
 }
 
+.installation .btn {
+  width: 300px;
+  margin: 20px auto;
+}
+
 .installation .btn button {
   background-color: #6d6f71;
   color: white;
+  border-radius: 5px;
+  padding: 5px;
   width: 100%;
+  font-size: 20px;
 }
 
 .installation .btn button:hover {
@@ -264,40 +353,67 @@ li :hover {
   color: #6d6f71;
 }
 
-.box {
-  padding: 5px 5px;
-}
-
 .head-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 5px;
 }
 
-.head-box .fleche-box {
-  display: flex;
-  justify-content: space-between;
-  width: 50px;
-}
-
-.head-box .box-text {
+.box-text {
+  padding: 5px;
+  font-family: Calibri;
   text-align: justify;
 }
 
-.fleche {
-  height: 20px;
+.actu-text {
+  color: white;
+}
+
+.plus-logo-box {
+  fill: #6d6f71;
+  width: 2em;
+  height: 2em;
+}
+
+.plus-logo-actu {
+  fill: white;
 }
 
 @media all and (min-width: 1024px) {
   .content {
     width: 1024px;
-    margin: 0 auto;
   }
   .content .logo {
     width: 300px;
   }
+  .paragraphe {
+    width: 1024px;
+    margin: 50px auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .paragraphe .title {
+    text-align: right;
+    width: 49%;
+  }
+  .paragraphe .text {
+    text-align: left;
+    width: 49%;
+  }
+  .btn-plus {
+    width: 400px;
+  }
+  .plus-logo-box {
+    display: flex;
+    margin-left: auto;
+  }
   .logo-content div {
     width: 20%;
+  }
+  .box {
+    width: 1024px;
   }
   .box .img-box {
     display: flex;
@@ -314,10 +430,17 @@ li :hover {
   }
 }
 
-.footer {
+.bg-footer {
   background-color: #6d6f71;
+}
+
+.footer {
   text-align: center;
   color: white;
+}
+
+.contact {
+  padding: 20px 0;
 }
 
 .partenaires-box {
@@ -328,8 +451,26 @@ li :hover {
   margin: 20px 5px 0 5px;
 }
 
+.partenaires-box span {
+  font-family: Calibri;
+}
+
+.network {
+  fill: white;
+  width: 1em;
+  height: 1em;
+}
+
 .partenaires-img {
   width: 70px;
+}
+
+.partenaires-img img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
 }
 
 @media all and (min-width: 1024px) {

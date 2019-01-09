@@ -1,0 +1,241 @@
+.content {
+  text-align: center;
+  margin: 50px auto;
+  .logo {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .titreTxt > *{
+     color: $orange;
+  }
+  .logo-content{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     div {
+       width: 40%;
+       .logo-content-img{
+         width: 100px;
+         margin: 0 auto;
+       }
+     }
+  }
+}
+
+.picto-logo{
+  width: 100px;
+}
+
+.coop{
+  color: $brown;
+}
+
+.photovoltaique{
+  color: $green;
+}
+
+.energie{
+  color: $orange;
+}
+
+.capital{
+  color: $blue;
+}
+
+.bg-point{
+  background-image: url("../svg/points.svg");
+}
+
+.paragraphe{
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  .title {
+    font-size: 25px;
+    color: $grey;
+  }
+  .text{
+    font-family: Calibri;
+    color: $grey;
+  }
+}
+
+.btn-plus{
+  width: 300px;
+  margin: 20px auto;
+}
+
+.btn-plus > button {
+  background-color: $grey;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+}
+
+.btn-plus > button:hover{
+  background-color: darken($grey, 10%);
+}
+
+.plus-logo{
+  fill: white;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.5em;
+}
+
+.btn-souscrire{
+  width: 200px;
+  margin: 20px auto;
+}
+
+.btn-souscrire>button{
+  background-color: $orange;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  font-size: 20px;
+  color: black;
+}
+
+.btn-souscrire > button:hover{
+  background-color: darken($orange, 10%);
+}
+
+.box {
+  padding: 5px 0;
+  margin: 10px auto;
+}
+
+.fleche-droite-actu{
+  fill: white;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.fleche-droite-temoignages{
+  fill: $grey;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.actu{
+  background-color: $orange;
+  color: white;
+}
+
+.demarche{
+  background-color: $green;
+  color: $grey;
+}
+
+.installation{
+  background-image: url("../svg/points.svg");
+  color: $grey;
+  .btn{
+    width: 300px;
+    margin: 20px auto;
+    button{
+      background-color: $grey;
+      color: white;
+      border-radius: 5px;
+      padding: 5px;
+      width: 100%;
+      font-size: 20px;
+    }
+    button:hover{
+      background-color: darken($grey, 10%);
+    }
+  }
+}
+
+.temoignages{
+  background-color: $lightbrown;
+  color:$grey;
+}
+
+.head-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+.box-text{
+  padding: 5px;
+  font-family: Calibri;
+  text-align: justify;
+}
+
+.actu-text{
+  color: white;
+}
+
+.plus-logo-box{
+  fill: $grey;
+  width: 2em;
+  height: 2em;
+
+}
+
+.plus-logo-actu{
+  fill: white;
+}
+
+@media all and (min-width: $width-desktop) {
+  .content{
+    width: $width-desktop;
+    .logo {
+      width: 300px;
+    }
+  }
+
+  .paragraphe{
+    width: $width-desktop;
+    margin: 50px auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .title{
+      text-align: right;
+      width: 49%;
+    }
+    .text{
+      text-align: left;
+      width: 49%;
+    }
+  }
+
+  .btn-plus {
+    width: 400px;
+  }
+
+  .plus-logo-box{
+    display: flex;
+    margin-left: auto;
+  }
+
+  .logo-content div {
+    width: 20%;
+  }
+
+  .box{
+    width: $width-desktop;
+    .img-box{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img{
+        width: 40%;
+        height: 40%;
+      }
+      .box-text{
+        text-align: justify;
+        padding: 0 20px;
+      }
+    }
+  }
+
+}
